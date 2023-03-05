@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.nav {
+    padding: 20px;
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(256, 256, 256, 0.8);
+}
+
+.hero-img {
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-text {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
+
+.delievery-logo {
+    width: 100px;
+}
+
+.delievery-container {
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+footer {
+    width: 100vw;
+    background-color: #273036;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer svg {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow:none;
+  }
+
+ footer svg:hover {
+    transform: rotate(360deg);
+  }
