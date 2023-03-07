@@ -12,6 +12,11 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: rgba(256, 256, 256, 0.8);
+  z-index: 2;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 .nav-item {
@@ -26,6 +31,10 @@ nav {
     color: white;
 }
 
+.active {
+  background-color: #646464;
+}
+
 .hero-img {
   background-image: url('img/hero.jpg');
   background-attachment: fixed;
@@ -33,16 +42,18 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  z-index: 2;
 }
 
 .hero-text {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 2em;
+  z-index: 1;
 }
 
 /* DELIEVERY SECTION */
