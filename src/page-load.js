@@ -21,7 +21,7 @@ function createNav() {
   homeItem.textContent = 'Home';
   homeItem.addEventListener('click', (e) => {
     if (e.target.classList.contains('active')) return;
-    createHome(); //FIX THIS
+    createHome(); // FIX THIS
     console.log('home pressed');
   });
 
