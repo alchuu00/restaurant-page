@@ -1,5 +1,6 @@
 import createHome from './home';
 import createMenu from './menu';
+import createContact from './contact';
 
 function setActiveButton() {
   const navItems = document.querySelectorAll('.nav-item');
@@ -21,6 +22,7 @@ function createNav() {
   homeItem.textContent = 'Home';
   homeItem.addEventListener('click', (e) => {
     if (e.target.classList.contains('active')) return;
+    setActiveButton(homeItem);
     createHome(); // FIX THIS
     console.log('home pressed');
   });
@@ -40,6 +42,7 @@ function createNav() {
   contactItem.addEventListener('click', (e) => {
     if (e.target.classList.contains('active')) return;
     setActiveButton(contactItem);
+    createContact();
   });
 
   nav.appendChild(homeItem);

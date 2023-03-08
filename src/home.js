@@ -6,11 +6,11 @@ function createHeader() {
   heroText.classList.add('hero-text');
 
   const h1 = document.createElement('h1');
-  h1.textContent = 'Restaurant page';
+  h1.textContent = 'Pizza Haven';
   heroText.appendChild(h1);
 
   const p = document.createElement('p');
-  p.textContent = 'Best food in town!';
+  p.textContent = 'Experience pizza perfection - dine in or get it delivered hot and fresh to your doorstep!';
   heroText.appendChild(p);
 
   header.appendChild(heroText);
@@ -24,19 +24,19 @@ function createRatingSection() {
 
   const ratingBoxes = [
     {
-      stars: 3,
-      name: 'John Doe',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod lectus vitae nunc luctus dignissim.',
+      stars: 5,
+      name: 'Sarah G.',
+      text: 'Pizza Haven never disappoints! Their pizza is always fresh, hot, and loaded with toppings. The crust is perfectly crispy and the sauce is delicious. I would highly recommend this restaurant to any pizza lover out there',
     },
     {
       stars: 4,
-      name: 'Jane Doe',
-      text: 'Pellentesque blandit, augue vel accumsan ultrices, augue odio bibendum mi, nec lobortis erat lorem eget urna.',
+      name: 'Michael R.',
+      text: 'I have been ordering from Pizza Haven for years and I have never had a bad experience. The staff is always friendly and the pizza is consistently amazing. They have a great selection of toppings and their prices are very reasonable. I highly recommend this restaurant!',
     },
     {
       stars: 5,
-      name: 'Bob Smith',
-      text: 'Suspendisse sed maximus massa. In convallis quam ac nulla bibendum, in varius ante fringilla.',
+      name: 'Bob S.',
+      text: "Pizza Haven is my go-to spot for pizza. Their crust is the perfect combination of crispy and chewy and their sauce is the best I have ever tasted. They have a great selection of toppings and their delivery service is always prompt. If you haven't tried Pizza Haven yet, you are missing out!",
     },
   ];
 
@@ -101,6 +101,8 @@ function createDelieverySection() {
 
 function createHome() {
   const main = document.querySelector('.main');
+
+  main.innerHTML = '';
 
   main.appendChild(createHeader());
   main.appendChild(createRatingSection());

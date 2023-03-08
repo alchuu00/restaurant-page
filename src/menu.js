@@ -1,3 +1,15 @@
+function createHeroMenu() {
+  const heroMenu = document.createElement('div');
+  heroMenu.classList.add('hero');
+
+  const h1 = document.createElement('h1');
+  h1.textContent = 'Menu';
+
+  heroMenu.appendChild(h1);
+
+  return heroMenu;
+}
+
 function createMenuSection() {
   const menuContainer = document.createElement('div');
   menuContainer.classList.add('menu-container');
@@ -46,7 +58,7 @@ function createMenuSection() {
     menuName.textContent = box.name;
 
     const menuIngredients = document.createElement('div');
-    menuIngredients.classList.add('rating-text');
+    menuIngredients.classList.add('menu-text');
     menuIngredients.textContent = box.ingredients;
 
     const menuImg = document.createElement('img');
@@ -67,7 +79,10 @@ function createMenu() {
 
   main.innerHTML = '';
 
+  main.appendChild(createHeroMenu());
   main.appendChild(createMenuSection());
+
+  return main;
 }
 
 export default createMenu;
