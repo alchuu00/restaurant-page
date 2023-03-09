@@ -13,6 +13,11 @@ function createHeader() {
   p.textContent = 'Experience pizza perfection - dine in or get it delivered hot and fresh to your doorstep!';
   heroText.appendChild(p);
 
+  const scrollDiv = document.createElement('div');
+  scrollDiv.classList.add('scroll-div');
+  scrollDiv.innerHTML = '&#9660;';
+  heroText.appendChild(scrollDiv);
+
   header.appendChild(heroText);
 
   return header;
