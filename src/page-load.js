@@ -1,3 +1,5 @@
+import '../dist/style.css';
+
 import createHome from './home';
 import createMenu from './menu';
 import createContact from './contact';
