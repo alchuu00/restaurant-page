@@ -1,3 +1,10 @@
+import BBQChicken from './img/bbqChicken.png';
+import Hawaiian from './img/hawaiian.png';
+import Margherita from './img/margherita.png';
+import Meat from './img/meat.png';
+import Pepperoni from './img/pepperoni.png';
+import Vegetarian from './img/vegetarian.png';
+
 function createHeroMenu() {
   const heroMenu = document.createElement('div');
   heroMenu.classList.add('hero');
@@ -6,6 +13,8 @@ function createHeroMenu() {
   h1.textContent = 'Menu';
 
   heroMenu.appendChild(h1);
+
+  console.log(typeof (BBQChicken));
 
   return heroMenu;
 }
@@ -18,34 +27,34 @@ function createMenuSection() {
     {
       name: 'Margherita',
       ingredients: 'Tomato sauce, fresh mozzarella cheese, basil leaves',
-      imageUrl: 'img/margherita.png',
+      imageUrl: Margherita,
     },
     {
       name: 'Pepperoni',
       ingredients: 'Tomato sauce, mozzarella cheese, pepperoni slices',
-      imageUrl: 'img/pepperoni.png',
+      imageUrl: Pepperoni,
     },
     {
       name: 'Hawaiian',
       ingredients: 'Tomato sauce, mozzarella cheese, ham, pineapple',
-      imageUrl: 'img/hawaiian.png',
+      imageUrl: Hawaiian,
     },
     {
       name: 'Vegetarian',
       ingredients:
         'Tomato sauce, mozzarella cheese, bell peppers, mushrooms, onions',
-      imageUrl: 'img/vegetarian.png',
+      imageUrl: Vegetarian,
     },
     {
       name: 'BBQ Chicken',
       ingredients: 'BBQ sauce, mozzarella cheese, grilled chicken, red onions',
-      imageUrl: 'img/bbqChicken.png',
+      imageUrl: BBQChicken,
     },
     {
       name: 'Meat Lovers',
       ingredients:
         'Tomato sauce, mozzarella cheese, pepperoni, sausage, bacon, ham',
-      imageUrl: 'img/meat.png',
+      imageUrl: Meat,
     },
   ];
 

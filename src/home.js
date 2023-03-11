@@ -1,3 +1,6 @@
+import Wolt from './img/wolt.png';
+import Uber from './img/uber-eats.png';
+
 function createHeader() {
   const header = document.createElement('header');
   header.classList.add('hero-img');
@@ -91,14 +94,14 @@ function createDelieverySection() {
   h1.textContent = 'order delievery';
   delieveryContainer.appendChild(h1);
 
-  const delieveryLogo1 = document.createElement('img');
+  const delieveryLogo1 = new Image();
   delieveryLogo1.classList.add('delievery-logo');
-  delieveryLogo1.setAttribute('src', 'img/wolt.png');
+  delieveryLogo1.src = Wolt;
   delieveryContainer.appendChild(delieveryLogo1);
 
-  const delieveryLogo2 = document.createElement('img');
+  const delieveryLogo2 = new Image();
   delieveryLogo2.classList.add('delievery-logo');
-  delieveryLogo2.setAttribute('src', 'img/uber-eats.png');
+  delieveryLogo2.src = Uber;
   delieveryContainer.appendChild(delieveryLogo2);
 
   return delieveryContainer;

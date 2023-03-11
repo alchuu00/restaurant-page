@@ -11,11 +11,16 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
     "eslint": "^8.35.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
+    "google-fonts-webpack-plugin": "^0.4.4",
+    "mini-css-extract-plugin": "^2.7.3",
     "style-loader": "^3.3.1",
-    "webpack": "^5.75.0",
+    "terser-webpack-plugin": "^5.3.7",
+    "webfontloader": "^1.6.28",
+    "webpack": "^5.76.1",
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
