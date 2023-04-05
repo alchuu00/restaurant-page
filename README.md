@@ -1,4 +1,4 @@
-Project: Restaurant Page | The Odin Project - JavaScript Course
+# Project: Restaurant Page | The Odin Project - JavaScript Course
 
 This is a project from The Odin Project -  JavaScript Course
 
